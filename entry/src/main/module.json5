@@ -1,0 +1,75 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "EntryAbilityA",
+        "srcEntry": "./ets/abilitys/EntryAbilityA.ets",
+        "description": "$string:EntryAbilityA_desc",
+        "icon": "$media:layered_image",
+        "launchType": "singleton",
+        "label": "$string:EntryAbilityA_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "EntryAbilityB",
+        "srcEntry": "./ets/abilitys/EntryAbilityB.ets",
+        "description": "$string:EntryAbilityB_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EntryAbilityB_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "EntryAbilityC",
+        "srcEntry": "./ets/abilitys/EntryAbilityC.ets",
+        "description": "$string:EntryAbilityC_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EntryAbilityC_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "EntryAbilityD",
+        "srcEntry": "./ets/abilitys/EntryAbilityD.ets",
+        "description": "$string:EntryAbilityD_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EntryAbilityD_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      }
+    ]
+  }
+}
